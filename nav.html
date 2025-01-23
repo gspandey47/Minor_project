@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+   
+        @media (max-width:"900px"){
+            #mynav ul{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+<body>
+   
+   
+<nav class="container-fluid d-flex justify-content-end p-4 bg-dark align-content-lg-center"id="mynav"onmousemove="myFunction();">
+            
+    <ul class="nav nav-pills d-flex">
+        <li class="nav-item">
+            <a href="#"class="nav-link active">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="#"class="nav-link">About</a>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a href="#"class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">India</a>
+        </li>
+        <ul class="dropdown-menu">
+            <li><a href="#"class="dropdown-item">USA</a></li>
+            <li><a href="#"class="dropdown-item">England</a></li>
+            <li><hr class="dropdown-divider"><a href="#"class="dropdown-item">Australia</a></li>
+            <li><a href="#"class="dropdown-item">Australia</a></li>
+
+        </ul>
+
+        <li class="nav-item">
+            <a href="#"class="nav-link">Contactus</a>
+        </li>
+        </ul>
+        
+        <div class="d-inline-flex list-unstyled  ms-2 gap-3" id="div1">
+          <li><input class="form-control" type="search" placeholder="Search" aria-label="Search"></li>
+             
+          <button class="btn btn-outline-secondary" type="submit">Search</button>
+          
+          
+          <button class="btn btn-outline-primary"type="submit"><a href="../SIGNIN/signin.html"class="text-decoration-none">Signin</a></button>
+          <button id="hamburger" class="btn btn-outline-primary text-white"><i class="fa fa-bars" aria-hidden="true"></i></button>
+            </div>
+
+        
+      
+
+</nav>
+
+
+</body>
+<script>
+    
+        
+
+
+
+
+        // var navi=document.getElementById("mynav");
+    // var newWd=navi.style.width="1200px";
+    // var newWd1=navi.style.width="992px";
+        /*if(navi<newWd && navi>newWd1 ){
+            navi.style.backgroundColor="yellow";
+            navi.style.display="flex";
+            navi.style.flexDirection="column";
+            navi.style.minHeight="30vh";
+        }*/
+
+    
+
+</script>
+</html>

@@ -1,0 +1,468 @@
+body{
+    background-color:#6C757D;
+}
+header{
+    position: sticky;
+    background-color:white;
+    display: grid;
+    /* place-content: center; */
+    /* height: 100vh; */
+    margin: 0;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 6px;
+
+}
+header:hover{
+    border: #494D5F;
+    border-radius: 4px;
+}
+
+nav {
+    min-height:9vh;
+    margin:13px;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(3px);
+    border-radius: 5px;
+    box-shadow: 0 5px 30px 0 rgba(22, 32, 220, 0.37);
+    padding-right: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+  .ulF {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    /* justify-content: center; */
+    align-content: center;
+    position: relative;
+    top: 10px;
+  }
+  .ulf .menu{
+    margin-top: 15px;
+    color: #4b4a4a;
+    display: grid;
+    /* place-content: center; */
+    margin: 0;
+    cursor: pointer;
+  }
+
+.logo{
+    /* color: #0f1cdd; */
+    /* color: #eb2323; */
+    cursor: pointer;
+    /* margin-top: 14px; */
+    font-weight: 700;
+}
+
+.menu {
+    color: #393838;
+    padding: 0.5rem;
+    font-weight: 500;
+    position: relative;
+    text-decoration: none;
+}
+.menu.active{
+color: rgb(255, 242, 0);
+font-weight: 700;
+}
+  .menu::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #272626;
+    /* font-weight: 600; */
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: all .5s ease;
+    bottom: 0;
+    left: 0;
+  }
+
+.menu:hover::before {
+    transform: scaleX(1);
+}
+
+#myspecial{
+    position: absolute;
+    right: 22px;            
+    margin-top: 22px;
+}
+
+#myspecial input{
+    border: 2px solid gray;
+    border-radius: 3px;
+    width:30vw;
+    background-color: #fff;
+}
+#myspecial button{
+    height:40px;
+    background-color: #2d2d2d;
+    border: 2px solid rgb(58, 58, 58);
+    border-radius: 3px;
+    text-decoration: none;
+    
+    
+}
+#myspecial button a{
+    list-style: none;
+    color: aliceblue;
+    font-weight: 400;
+}
+#myspecial button:hover{
+    background-color:#494D5F;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+    /* background-color: #494D5F; */
+
+#myspecial button a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 200;
+}
+#hamburger{
+    height: 20px;
+    display: none;
+}
+
+@media(max-width:900px){
+     #myspecial{
+        display:flex;
+        left: 255px;
+        gap: 2px;
+      margin-top: 15px;
+        
+     }
+     #hamburger{
+        display: block;
+     }
+    
+    header{
+        min-height: 30vh;
+    }
+    header #myNav{
+        /* background-color: beige; */
+        height: 40px;
+        overflow: hidden;
+        
+    }
+    header nav ul{
+        position:relative;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        /* min-height: 40vh; */
+        /* gap: 2px; */
+        
+    }
+    .logo{
+        position: relative;
+        bottom: 78px;
+        right: 10px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+@media(max-width:800px){
+     #myspecial{
+        display:flex;
+        left: 255px;
+        gap: 2px;
+        top: 0px;
+        
+     }
+ #myspecial .menu{
+    display: none;
+ }
+     #hamburger{
+        display: block;
+        position: relative;
+        left: 370px;
+     }
+    
+    header{
+        min-height: 30vh;
+    }
+    header #myNav{
+        /* background-color: yellow; */
+        height: 40px;
+        overflow: hidden;
+        
+    }
+    header nav ul{
+        position:relative;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        /* min-height: 40vh; */
+        /* gap: 2px; */
+        
+    }
+    .logo{
+        position: relative;
+        bottom: 78px;
+        right: 10px;
+    }
+    
+}
+
+
+@media(max-width:700px){
+     #myspecial{
+        display:flex;
+        left: 255px;
+        gap: 2px;
+        top: 0px;
+        
+     }
+     #hamburger{
+        display: block;
+        position: relative;
+        left: 170px;
+     }
+    
+    header{
+        min-height: 30vh;
+    }
+    header #myNav{
+        /* background-color: green; */
+        height: 40px;
+        overflow: hidden;
+        
+    }
+    header nav ul{
+        position:relative;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        /* min-height: 40vh; */
+        /* gap: 2px; */
+        
+    }
+    .logo{
+        position: relative;
+        bottom: 78px;
+        right: 10px;
+    }
+    
+}
+
+
+@media(max-width:600px){
+     #myspecial{
+        display:flex;
+        left: 255px;
+        gap: 2px;
+        
+        
+     }
+     #hamburger{
+        display: block;
+        position:relative;
+        top: 0px;
+     }
+    
+    header{
+        min-height: 30vh;
+    }
+    header #myNav{
+        /* background-color: red; */
+        height: 40px;
+        overflow: hidden;
+        
+    }
+    header nav ul{
+        position:relative;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        /* min-height: 40vh; */
+        /* gap: 2px; */
+        
+    }
+    .logo{
+        position: relative;
+        bottom: 78px;
+        right: 10px;
+    }
+    
+}
+
+
+
+
+@media(max-width:500px){
+     #myspecial{
+        display:flex;
+        left: 255px;
+        gap: 2px;
+        top: 0px;
+        
+     }
+     #hamburger{
+        display: block;
+        position: relative;
+        left: 80px;
+     }
+    
+    header{
+        min-height: 30vh;
+    }
+    header #myNav{
+        /* background-color: blue; */
+        height: 40px;
+        overflow: hidden;
+        
+    }
+    header nav ul{
+        position:relative;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        /* min-height: 40vh; */
+        /* gap: 2px; */
+        
+    }
+    .logo{
+        position: relative;
+        bottom: 78px;
+        right: 10px;
+    }
+    
+}
+
+
+@media(max-width:400px){
+     #myspecial{
+        display:flex;
+        left: 255px;
+        gap: 2px;
+        top: 0px;
+        
+     }
+     #hamburger{
+        position: relative;
+        display: block;
+        left: 10px;
+     }
+    
+    header{
+        min-height: 30vh;
+    }
+    header #myNav{
+        background-color: saddlebrown;
+        height: 40px;
+        overflow: hidden;
+        
+    }
+    header nav ul{
+        position:relative;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        /* min-height: 40vh; */
+        /* gap: 2px; */
+        
+    }
+    .logo{
+        position: relative;
+        bottom: 78px;
+        right: 10px;
+    }
+    
+}
+
+
+
+@media(max-width:300px){
+     #myspecial{
+        display:flex;
+        left: 255px;
+        gap: 2px;
+        top: 0px;
+        
+     }
+     #hamburger{
+        /* background-color: rgb(232, 4, 4); */
+        position: relative;
+        display: block;
+        /* height: 4px; */
+        left:-100px;
+     }
+    
+    header{
+        min-height: 30vh;
+        background-color: white;
+    }
+    header #myNav{
+        /* background-color: aqua; */
+        height: 40px;
+        overflow: hidden;
+        
+    }
+    header nav ul{
+        position:relative;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        /* min-height: 40vh; */
+        /* gap: 2px; */
+        
+    }
+    .logo{
+        position: relative;
+        bottom: 78px;
+        right: 10px;
+    }
+    
+}
+
+
+main{
+    padding-block: 20px;
+    margin-top: 80px;
+}
+
+/* #cards-container{
+     display: flex; *
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px; 
+    align-items: start;
+
+} */
+
+#inputme{
+    color: aqua;
+    background-color: blue;
+}
+
+
+
+
+
+
